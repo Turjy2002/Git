@@ -1,41 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Turjy.Dev</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My portfolio as a web developer" />
+    <meta
+      name="keywords"
+      content="portfolio, developer, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Guy Turjeman" />
+    <title>Turjy Portfolio</title>
+    <link rel="icon" href="services-portfolio.png" />
     <link rel="stylesheet" href="Turjy-Dev-Portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
     <header>
       <nav class="headNav">
-        <img src="TurjyLogo.webp" alt="Logo" class="navLogo" />
-        <div class="linkBox">
-          <a href="" class="navLink">Home </a>
-          <a href="" class="navLink">About </a>
-          <a href="" class="navLink">Projects</a>
-          <a href="" class="navLink">Contact </a>
+        <div class="logoBox">
+          <img
+            src="turjydev-high-resolution-logo-transparent.webp"
+            alt="Portfolio logo"
+          />
         </div>
+        <ul class="menuBox">
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#projects">PROJECTS</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+        <label class="hamburgerMenu" for="hamburgerMenu">
+          <input type="checkbox" id="hamburgerMenu" />
+        </label>
+        <aside class="hamburgerNaviBox">
+          <ul class="hamburgerNaviList">
+            <li>
+              <a href="#">HOME</a>
+            </li>
+            <li>
+              <a href="#about">ABOUT</a>
+            </li>
+            <li>
+              <a href="#projects">PROJECTS</a>
+            </li>
+            <li>
+              <a href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </aside>
       </nav>
     </header>
-
-    <main>
-      <section class="mainSection">
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-          corrupti ratione, iste earum ipsum expedita nesciunt deserunt nulla
-          autem veritatis unde quidem tempore, modi ut veniam porro enim
-          perferendis minus.
-        </p>
-      </section>
-    </main>
+    <div class="backgroundCover">
+      <main>
+        <section class="mainSection">
+          <h1>Hi, I'm Guy Turjeman</h1>
+          <p>And I do code, aiming to excel in fullstack development</p>
+          <div class="socialLinkBox">
+            <a
+              href="https://www.linkedin.com/in/guy-turjeman-265149362/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/Turjy2002"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GitHub
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="background">
+      <div class="aboutBox" id="about">
+        <div class="aboutCard cards">
+          <article>
+            <h2>About</h2>
+            <p>
+              Ever since childhood I always had a strange fixation on computers
+              and how they work, nothing piqued my interest like computers did.
+              And now I'm having a shot at my dream of working in that same
+              field as a fully fledged fullstack developer. I'm looking forward
+              for my future as a developer and I'm excited to try and excel in
+              the ways of the code.
+            </p>
+          </article>
+        </div>
+        <div class="skillBox cards">
+          <h2>Skills</h2>
+          <div class="imgBox">
+            <img src="html.webp" alt="HTML Icon" title="HTML" loading="lazy" />
+            <img src="css-3.webp" alt="CSS Icon" title="CSS" loading="lazy" />
+            <img
+              src="js.webp"
+              alt="JavaScript Icon"
+              title="JavaScript"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="toolBox cards">
+          <h2>Tools</h2>
+          <div class="imgBox">
+            <img
+              src="vscode-logo-blue-ribbon-icon-software-development-tool.png"
+              alt="VSCode"
+              title="Visual Studio Code"
+              loading="lazy"
+            />
+            <img
+              src="Git-Icon-White.png"
+              alt="Git"
+              title="Git"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background">
+      <div class="projectsHeader" id="projects"><h2>Recent Works</h2></div>
+      <div class="projectsBox">
+        <article class="cards">
+          <img src="projectExample.png" alt="Porject example" loading="lazy" />
+          <h3>Example1</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia minus
+            tempora consequatur temporibus nulla provident quas saepe assumenda
+            hic exercitationem eligendi debitis non voluptatum illo, ex labore
+            cupiditate nobis sapiente?
+          </p>
+        </article>
+        <article class="cards">
+          <img src="projectExample.png" alt="Porject example" loading="lazy" />
+          <h3>Example2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            necessitatibus? Qui reiciendis fugiat, tempore placeat atque eaque
+            nisi modi quae doloribus repellendus ea, eius sapiente consequatur
+            officiis perspiciatis ipsam quasi?
+          </p>
+        </article>
+        <article class="cards">
+          <img src="projectExample.png" alt="Porject example" loading="lazy" />
+          <h3>Example3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            architecto assumenda quidem! Sequi doloribus earum impedit quasi
+            facere officia tempora eum eius voluptatibus debitis! Deleniti
+            commodi aperiam officia sapiente laboriosam.
+          </p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="contactBox" id="contact">
+        <article class="cards">
+          <h2>Let's get in touch</h2>
+          <p>
+            I'm mainly available through email and LinkedIn. <br />
+            you can get to my LinkedIn via the link in the home page <br />
+            or mail to <span>turjy2002@gmail.com</span>
+          </p>
+        </article>
+      </div>
+      <div class="copyRightsBox">
+        <p>&copy; All rights reserved 2025 Guy Turjeman</p>
+      </div>
+    </footer>
   </body>
 </html>
