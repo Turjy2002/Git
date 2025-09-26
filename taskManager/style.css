@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap");
+/* Google font - inter*/
+
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap");
+/* Google font - Oswald */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter, arial;
+  font-size: 1rem;
+}
+
+body {
+  height: 100dvh;
+  background-color: rgb(30, 35, 57);
+}
+
+.container {
+  width: 768px;
+  margin: 2em auto;
+}
+
+.box {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.5),
+    rgba(20, 20, 20, 0.25)
+  );
+  backdrop-filter: blur(5px);
+  border: 0.2em solid rgba(0, 0, 0, 0.2);
+  border-radius: 1em;
+  padding: 1em 2em;
+}
+
+header {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5em;
+}
+
+section h1 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  align-content: center;
+  text-align: center;
+}
+
+section form {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  input {
+    padding: 0.2em;
+    border-radius: 0.5em;
+  }
+
+  label {
+    margin-left: 0.2em;
+  }
+}
+
+section form .textContainer {
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  #taskInput {
+    width: 20em;
+    align-content: center;
+  }
+}
+
+section form .dateContainer {
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  #dateInput {
+    width: 8.5em;
+    padding: 0.2em;
+  }
+}
+
+section form #addTaskBtn {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  color: white;
+  height: 32px;
+  background-color: rgb(71, 123, 71);
+  border: none;
+  border-radius: 0.2em;
+  font-weight: bold;
+  transition: background-color 0.15s ease;
+  padding: 0 2em;
+
+  &&:hover {
+    cursor: pointer;
+    background-color: rgba(71, 123, 71, 0.5);
+  }
+
+  &&:active {
+    opacity: 0.7;
+  }
+}
+
+section .btnContainer {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    cursor: pointer;
+    padding: 0.2em;
+    border: none;
+    border-radius: 0.4em;
+    transition: background-color 0.1s ease;
+  }
+}
+
+.filterBtns button {
+  transition: background-color 0.1s ease;
+  background: linear-gradient(to bottom, rgb(0, 47, 255), rgb(32, 0, 108));
+  color: white;
+
+  &&:hover {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+main #taskList {
+  list-style: none;
+
+  #emptyPlaceHolder {
+    color: gray;
+    text-align: center;
+    font-style: italic;
+  }
+
+  li {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+}
