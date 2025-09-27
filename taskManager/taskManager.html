@@ -14,10 +14,10 @@
     <header class="box">
       <section>
         <h1>Task Manager</h1>
-        <form>
+        <form id="taskForm">
           <div class="textContainer">
             <label for="taskInput">New Task:</label><br>
-            <input type="text" id="taskInput" placeholder="What needs to be done?" required>
+            <input type="text" id="taskInput" placeholder="What needs to be done?">
           </div>
           <div class="dateContainer">
             <label for="dateInput">Due Date:</label><br>
@@ -40,7 +40,7 @@
     </header>
     <main>
       <ul class="box" id="taskList">
-        <li id="emptyPlaceHolder">No Tasks Available...</li>
+        <li id="emptyPlaceHolder">No tasks available...</li>
       </ul>
     </main>
   </div>
